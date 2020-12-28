@@ -21,30 +21,38 @@ describe('OLSKLanding_Misc', function () {
 
 	});
 
-	describe('OLSKDecorLandingHeading', function test_OLSKDecorLandingHeading () {
+	describe('OLSKLandingHeading', function test_OLSKLandingHeading () {
 
 		it('sets text', function () {
-			browser.assert.text(OLSKDecorLandingHeading, item.OLSKLandingHeadingText);
+			browser.assert.text(OLSKLandingHeading, item.OLSKLandingHeadingText);
 		});
 		
 	});
 
-	describe('OLSKDecorLandingBlurb', function test_OLSKDecorLandingBlurb () {
+	describe('OLSKLandingBlurb', function test_OLSKLandingBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(OLSKDecorLandingBlurb, item.OLSKLandingBlurbText);
+			browser.assert.text(OLSKLandingBlurb, item.OLSKLandingBlurbText);
 		});
 		
 	});
 
-	describe('OLSKDecorPressCall', function test_OLSKDecorPressCall () {
+	describe('OLSKLandingAction', function test_OLSKLandingAction () {
+
+		it('classes OLSKDecorPress', function () {
+			browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPress');
+		});
+
+		it('classes OLSKDecorPressCall', function () {
+			browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPressCall');
+		});
 
 		it('sets href', function () {
-			browser.assert.attribute(OLSKDecorPressCall, 'href', item.OLSKLandingActionHref);
+			browser.assert.attribute(OLSKLandingAction, 'href', item.OLSKLandingActionHref);
 		});
 
 		it('sets text', function () {
-			browser.assert.text(OLSKDecorPressCall, item.OLSKLandingActionText);
+			browser.assert.text(OLSKLandingAction, item.OLSKLandingActionText);
 		});
 		
 	});
