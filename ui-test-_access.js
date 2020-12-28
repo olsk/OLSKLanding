@@ -3,9 +3,9 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 Object.entries({
 	OLSKLanding: '.OLSKLanding',
 	
-	OLSKLandingHeading: '.OLSKLandingHeading',
-	OLSKLandingBlurb: '.OLSKLandingBlurb',
-	OLSKLandingAction: '.OLSKLandingAction',
+	OLSKDecorLandingHeading: '.OLSKDecorLandingHeading',
+	OLSKDecorLandingBlurb: '.OLSKDecorLandingBlurb',
+	OLSKDecorPressCall: '.OLSKDecorPressCall',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
@@ -20,16 +20,16 @@ describe('OLSKLanding_Access', function () {
 		browser.assert.elements(OLSKLanding, 1);
 	});
 
-	it('shows OLSKLandingHeading', function () {
-		browser.assert.elements(OLSKLandingHeading, 1);
+	it('shows OLSKDecorLandingHeading', function () {
+		browser.assert.elements(OLSKDecorLandingHeading, 1);
 	});
 
-	it('shows OLSKLandingBlurb', function () {
-		browser.assert.elements(OLSKLandingBlurb, 1);
+	it('shows OLSKDecorLandingBlurb', function () {
+		browser.assert.elements(OLSKDecorLandingBlurb, 1);
 	});
 
-	it('shows OLSKLandingAction', function () {
-		browser.assert.elements(OLSKLandingAction, 1);
+	it('shows OLSKDecorPressCall', function () {
+		browser.assert.elements(OLSKDecorPressCall, 1);
 	});
 	
 });
