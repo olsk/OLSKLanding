@@ -7,7 +7,7 @@ Object.entries({
 	OLSKLandingBlurb: '.OLSKLandingBlurb',
 	OLSKLandingAction: '.OLSKLandingAction',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKLanding_Access', function () {
