@@ -17,19 +17,19 @@ describe('OLSKLanding_Access', function () {
 	});
 	
 	it('shows OLSKLanding', function() {
-		browser.assert.elements(OLSKLanding, 1);
+		return browser.assert.elements(OLSKLanding, 1);
 	});
 
 	it('shows OLSKLandingHeading', function () {
-		browser.assert.elements(OLSKLandingHeading, 1);
+		return browser.assert.elements(OLSKLandingHeading, 1);
 	});
 
 	it('shows OLSKLandingBlurb', function () {
-		browser.assert.elements(OLSKLandingBlurb, 1);
+		return browser.assert.elements(OLSKLandingBlurb, 1);
 	});
 
 	it('shows OLSKLandingAction', function () {
-		browser.assert.elements(OLSKLandingAction, 1);
+		return browser.assert.elements(OLSKLandingAction, 1);
 	});
 	
 });

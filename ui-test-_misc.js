@@ -16,7 +16,7 @@ describe('OLSKLanding_Misc', function () {
 	describe('OLSKLanding', function test_OLSKLanding () {
 		
 		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(OLSKLanding, 'OLSKCommonCard');
+			return browser.assert.hasClass(OLSKLanding, 'OLSKCommonCard');
 		});
 
 	});
@@ -24,7 +24,7 @@ describe('OLSKLanding_Misc', function () {
 	describe('OLSKLandingHeading', function test_OLSKLandingHeading () {
 
 		it('sets text', function () {
-			browser.assert.text(OLSKLandingHeading, item.OLSKLandingHeadingText);
+			return browser.assert.text(OLSKLandingHeading, item.OLSKLandingHeadingText);
 		});
 		
 	});
@@ -32,7 +32,7 @@ describe('OLSKLanding_Misc', function () {
 	describe('OLSKLandingBlurb', function test_OLSKLandingBlurb () {
 
 		it('sets text', function () {
-			browser.assert.text(OLSKLandingBlurb, item.OLSKLandingBlurbText);
+			return browser.assert.text(OLSKLandingBlurb, item.OLSKLandingBlurbText);
 		});
 		
 	});
@@ -40,19 +40,19 @@ describe('OLSKLanding_Misc', function () {
 	describe('OLSKLandingAction', function test_OLSKLandingAction () {
 
 		it('classes OLSKDecorPress', function () {
-			browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPress');
+			return browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPress');
 		});
 
 		it('classes OLSKDecorPressCall', function () {
-			browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPressCall');
+			return browser.assert.hasClass(OLSKLandingAction, 'OLSKDecorPressCall');
 		});
 
 		it('sets href', function () {
-			browser.assert.attribute(OLSKLandingAction, 'href', item.OLSKLandingActionHref);
+			return browser.assert.attribute(OLSKLandingAction, 'href', item.OLSKLandingActionHref);
 		});
 
 		it('sets text', function () {
-			browser.assert.text(OLSKLandingAction, item.OLSKLandingActionText);
+			return browser.assert.text(OLSKLandingAction, item.OLSKLandingActionText);
 		});
 		
 	});
